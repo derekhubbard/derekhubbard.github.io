@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Modifying Margins for First and Last Child Elements"
+date: 2013-10-30 10:24
+comments: true
+categories: CSS
+published: false
+
+---
+When working with lists of items in HTML, there are times when you want to modify the styling for first or last items in the list. For example, maybe you want a margin of 10px between each element in the list, and also an additional buffer of 10px before the first item and after the last item. This has been solved in the past using special CSS classes, just for identifying the first or last item in the list.  
+
+The challenge with this approach is when you are programatically building a dynamic list of elements. You find yourself having to account for the first/last items in the list in your templates, and apply additional classes to the generated markup in these scenarios.  
+
+Enter the CSS3 selectors of first-child and last-child.  This isn't anything new as it has been part of the CSS3 spec for years.  But I find this design pattern coming in handy frequently, so it's worth repeating here.  
+
+###first-child, last-child
+{% gist 7237186 %}	
+
+###nth-child
+

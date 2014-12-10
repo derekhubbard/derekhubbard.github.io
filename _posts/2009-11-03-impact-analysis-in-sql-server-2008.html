@@ -1,0 +1,18 @@
+---
+layout: post
+title: Impact Analysis in SQL Server 2008
+tags:
+- Blog
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+---
+<p>A colleague of mine and I were confronted with an issue today when we did not perform a proper code search before making some database schema changes to an existing SQL Server 2008 database.&#160; This made me realize that I don't think I've ever performed an impact analysis on code within SQL Server.&#160; Impact analysis on my application code is like second nature to me, but the idea of analyzing my SQL Server code was not something I had thought of before.</p>  <p>Impact analysis is extremely important when making changes to an existing application - especially if the changes you are making include database schema changes.&#160; This is even more important if the application you are changing is an existing production application. if users are working with your application, they aren't going to be happy if they have runtime errors in their application every time you touch the codebase.&#160; The specific project my colleague and I are working on is still in development, so we didn't cause any major production issues as a result of the schema changes we made, however, this may not be the case every time we make schema changes in the future.</p>  <p>A quick search on <a href="http://www.stackoverflow.com">StackOverflow</a> shows that I'm not the first developer to ask this <a href="http://stackoverflow.com/questions/1364633/search-for-a-key-word-in-all-the-stored-procs-for-a-given-db">question</a>.&#160; Also, I'm sure I'm not the last person to ask about it either, so I thought it was worth repeating here in case anyone else is interested.</p>  <p>In my scenario, I needed a way to search all of the existing stored procedures to see if an existing database column and relationship were referenced.&#160; The easiest way to do this is a quick keyword search through all of the stored procedures.&#160; Our database has over 100 stored procedures, so searching each one by hand wasn't feasible.&#160; Plus, we're developers - when we are confronted with situations like this in the future, we should be looking for a quick way to automate this type of task.</p>  <p>One of the responses to this <a href="http://stackoverflow.com/questions/1364633/search-for-a-key-word-in-all-the-stored-procs-for-a-given-db">question on StackOverflow</a> suggest running a quick SQL query against the database you want to search, plugging in the keyword you want to search for.</p>  <pre>SELECT DISTINCT(sysobjects.name)<br />FROM sysobjects,syscomments
+WHERE sysobjects.id = syscomments.id
+AND sysobjects.type = 'P'
+AND sysobjects.category=0
+AND CHARINDEX(&lt;the keyword&gt;,syscomments.text)&gt;0</pre>
+
+<p>Just replace the placeholder '&lt;the keyword&gt;' with the keyword you want to find.&#160; This query can easily be thrown into a stored procedure (with the keyword as a parameter) and you can call this every time you need to perform an impact analysis on your SQL Server stored procedures before making changes in the future.&#160; Your colleagues. and your boss. will appreciate this, trust me.</p>
