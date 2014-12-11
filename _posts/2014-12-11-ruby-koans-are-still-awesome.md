@@ -24,7 +24,7 @@ I've made my way down the "path to enlightenment" with Ruby Koans before - this 
 
 But each time I go through them, I find myself being consistently inspired by one important point.
 
-##Testing is the culture. 
+##Testing = Culture 
 With Ruby Koans, learning happens through the use of tests. Run the tests, examine the error message, and then examine the test. 
 
 From here, you start asking yourself a couple questions. Why the test is failing? What is the test trying to verify? You then start changing the code to get the test to pass. And, often times without you even knowing it, you end up learning something new about the Ruby language along the way.
@@ -35,7 +35,7 @@ But once you've finished walking the path, you will most likely find yourself re
 
 The "path to enlightenment" is less about teaching you the syntax of the Ruby language and more about how to be a better developer. This is the broader lesson.
 
-The koans are now maintained by a company named [Neo](http://neo.com/), but were originally created by Joe O'Brien and the late, great [Jim Weirich](https://twitter.com/jimweirich).
+The koans are now maintained by a company named [Neo](hI ttp://neo.com/), but were originally created by Joe O'Brien and the late, great [Jim Weirich](https://twitter.com/jimweirich).
 
 RIP Jim.
 
