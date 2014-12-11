@@ -11,7 +11,7 @@ That's right. The [Ruby Koans](http://rubykoans.com/) are still awesome.
 
 Within the last month, I joined a project that is using [Ember](http://emberjs.com/) for the front end of the application, and [Rails](http://rubyonrails.org/) for a backend API.
 
-I haven't done much with Ember yet, but I have been working with Ruby on other other projects, so I don't **completely** feel like a fish out of water. Emphasis on completely.
+I haven't done much with Ember yet, but I have been working with Ruby on other projects, so I don't **completely** feel like a fish out of water. Emphasis on completely.
 
 But after working with .NET for the better part of the last decade, it always feels a little weird to jump back into the command line and try to get my Ruby on.
 
