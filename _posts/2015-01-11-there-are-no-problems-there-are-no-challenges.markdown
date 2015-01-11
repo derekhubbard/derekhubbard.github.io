@@ -4,7 +4,6 @@ layout: post
 title: "There Are No Problems. There Are No Challenges."
 date: 2015-01-11
 published: true
-categories: [Leadership]
 
 ---
 

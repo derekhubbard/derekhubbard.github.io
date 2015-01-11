@@ -3,7 +3,6 @@ layout: post
 title: "CodeStock 2013 - Conference Wrap Up"
 date: 2013-07-13 23:35
 comments: true
-categories: 
 published: true 
 
 ---

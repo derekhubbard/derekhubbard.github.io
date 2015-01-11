@@ -3,7 +3,6 @@ layout: post
 title: "CSS3 Child Pseudo-Selectors: How To Single Out the Special Children"
 date: 2013-11-01
 comments: true
-categories: CSS
 published: true
 
 ---

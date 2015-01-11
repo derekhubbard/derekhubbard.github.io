@@ -4,7 +4,6 @@ layout: post
 title: "CodeStock 2013 - Agile Retrospectives for High Performing Teams"
 date: 2013-07-12 12:16
 comments: true
-categories: [Speaking, Agile, Scrum, Retrospective]
 published: true
 
 ---

@@ -4,9 +4,7 @@ layout: post
 title: "More Effective Daily Scrums with the TFS 2012 Task Board"
 date: 2013-06-24
 comments: true
-categories: 
 published: true
-categories: [TFS, Visual Studio, ALM, Scrum]
 
 ---
 

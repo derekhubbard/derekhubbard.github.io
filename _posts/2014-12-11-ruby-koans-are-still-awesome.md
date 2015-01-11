@@ -4,7 +4,6 @@ layout: post
 title: "The Ruby Koans Are Still Awesome"
 date: 2014-12-11
 published: true
-categories: [Ruby, Testing]
 
 ---
 That's right. The [Ruby Koans](http://rubykoans.com/) are still awesome. 

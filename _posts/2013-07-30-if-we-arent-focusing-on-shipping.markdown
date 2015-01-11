@@ -4,7 +4,6 @@ layout: post
 title: "If We Aren't Focusing on Shipping, Then What The Hell Are We Doing?"
 date: 2013-07-30 19:26
 comments: true
-categories: 
 published: true
 
 ---
