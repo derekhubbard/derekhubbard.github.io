@@ -18,6 +18,7 @@ Instead, we should look at events in our lives as **opportunities**. The word op
 This idea is the premise of the first chapter in a [book titled "Energy Leadership" by Bruce D. Schneider](http://www.amazon.com/Energy-Leadership-Transforming-Your-Workplace/dp/0470186364/). This book, which was a Christmas gift from the management team at [POMIET](http://pomiet.com/), is next up on my reading list for this year and I'm looking forward to diving in more. 
 
 So to wrap up, as Bruce states in the first chapter of his book:
+
 >"Life offers neither problems nor challenges, only opportunities."
 
 With that in mind, I'm off to find my next opportunity.
