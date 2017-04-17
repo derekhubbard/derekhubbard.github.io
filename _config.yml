@@ -1,5 +1,5 @@
 # Site settings
-title:       derek hubbard 
+title:       derek hubbard
 email:       derek@derekhubbard.com
 author:      Derek Hubbard
 description: "think. code. blog."
@@ -10,12 +10,12 @@ url:         "/"
 google_analytics: UA-9397993-1
 
 # Optional features
-animated:           false 
-show_related_posts: false
-show_post_footers:  true 
+animated:           false
+show_related_posts: true
+show_post_footers:  true
 
 # Social icons
-show_social_icons: true 
+show_social_icons: true
 github_username: derekhubbard
 twitter_username: derekhubbard
 google_plus_id:
@@ -28,5 +28,8 @@ flattr_button:
 markdown:     kramdown
 permalink:    pretty
 paginate:     10
+
 sass:
   compressed: true
+
+gems: [jekyll-paginate]
