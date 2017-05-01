@@ -2,7 +2,7 @@
 title:       derek hubbard
 email:       derek@derekhubbard.com
 author:      Derek Hubbard
-description: "think. code. blog."
+description: "a creative and inquisitive software engineer with over 15 years of experience developing exceptional user interfaces and first-class products"
 baseurl:     ""
 url:         "/"
 
@@ -24,6 +24,8 @@ bitcoin_url:
 paypal_url:
 flattr_button:
 instagram_username: derekhubbard
+facebook_username: thederekhubbard
+dribbble_username: derekhubbard
 
 # Build settings
 markdown:     kramdown
