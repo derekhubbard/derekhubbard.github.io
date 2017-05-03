@@ -1320,7 +1320,7 @@
 		}
 
 		&.style3 {
-			@include wrapper(accent5);
+			@include wrapper(accent3);
 		}
 
 		&.style4 {
@@ -1365,7 +1365,7 @@
 		@include vendor('transform', 'translateX(20em)');
 		@include vendor('transition', 'transform #{_duration(menu)} ease');
 		-webkit-overflow-scrolling: touch;
-		background: _palette(accent1, bg);
+		background: _palette(accent2, bg);
 		color: _palette(accent1, fg-bold);
 		height: 100%;
 		max-width: 80%;
