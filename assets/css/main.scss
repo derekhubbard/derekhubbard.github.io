@@ -972,6 +972,10 @@
 			text-align: left;
 			width: 80%;
 
+		 	.recent-posts-more {
+				text-align: right;
+			}
+
 			@for $i from 1 through _misc(max-recent-posts) {
 				$j: 0.035 * $i;
 
@@ -1008,6 +1012,10 @@
 			@include breakpoint(medium) {
 				@include padding(3em, 2em);
 				text-align: center;
+
+				.recent-posts-more {
+					text-align: center;
+				}
 
 				&:before {
 					left: 0;
