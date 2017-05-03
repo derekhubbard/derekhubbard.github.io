@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
+{% include banner.html %}
 
 <!-- One -->
-<section id="one" class="wrapper style1 special">
+<section id="one" class="wrapper style5 special">
   <div class="inner">
     <header class="major">
       <h2>Hello, I'm Derek</h2>
@@ -21,24 +22,24 @@ layout: default
 <!-- Two -->
 <!-- <section id="two" class="wrapper alt style2">
   <section class="spotlight">
-    <div class="image"><img src="images/pic02.jpg" alt="User Experience" /></div><div class="content">
-      <h2>User Experience</h2>
+    <div class="image"><img src="images/pic01.jpg" alt="Architecture" /></div><div class="content">
+      <h2>Maintainable Application Architecture</h2>
       <p>
-        Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+        Most software applications are more complex than user interfaces and databases. Large, maintainable applications should be designed with clear separation between the persistence layer, the views or user interfaces, and the application domain. My experience includes significant architectural work, designing both small and large software applications, all built on core foundational ideas like <a href="https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)" target="_blank">SOLID</a> object oriented design principles and <a href="https://en.wikipedia.org/wiki/Domain-driven_design" target="_blank">Domain Driven Design</a>.
       </p>
     </div>
   </section>
   <section class="spotlight">
-    <div class="image"><img src="images/pic01.jpg" alt="Architecture" /></div><div class="content">
-      <h2>Domain Architecture</h2>
+    <div class="image"><img src="images/pic02.jpg" alt="User Experience" /></div><div class="content">
+      <h2>Agile Development</h2>
       <p>
-        Most software applications are more complicated than just pretty user interfaces and databases. My experience includes <a href="https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)" target="_blank">SOLID</a><a href="https://en.wikipedia.org/wiki/Domain-driven_design" target="_blank">Domain Driven Design</a>
+        Agile development lets us respond to change and pivot quickly, over following a plan. I have men
       </p>
     </div>
   </section>
   <section class="spotlight">
     <div class="image"><img src="images/pic03.jpg" alt="Test Driven Development" /></div><div class="content">
-      <h2>Test Driven Development</h2>
+      <h2>Build Quality Through Automated Testing</h2>
       <p>
         Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
       </p>
@@ -84,6 +85,25 @@ layout: default
 	</div>
 </section> -->
 
+<section id="three" class="wrapper style1 special">
+	<div class="inner">
+		<header class="major">
+			<h2>Recent Blog Posts</h2>
+			<!-- <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+			fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p> -->
+		</header>
+		<ul class="recent-posts">
+      {% for post in site.posts limit: 3 %}
+        <li>
+          <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+          <p>{{ post.excerpt }}</p>
+          <a class="recent-posts-more" href="{{ post.url }}"><h5>READ MORE<h5></a>
+        </li>
+      {% endfor %}
+		</ul>
+	</div>
+</section>
+
 <!-- CTA -->
 <section id="cta" class="wrapper style4">
   <div class="inner">
@@ -97,20 +117,3 @@ layout: default
     </ul>
   </div>
 </section>
-
-<!-- <div class="home">
-
-  <div class="posts">
-    {% for post in paginator.posts %}
-      <div class="post">
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
-          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-          <h3 class="h2 post-title">{{ post.title }}</h3>
-          <p class="post-summary">{{ post.summary }}</p>
-        </a>
-      </div>
-    {% endfor %}
-  </div>
-
-  {% include pagination.html %}
-</div> -->
