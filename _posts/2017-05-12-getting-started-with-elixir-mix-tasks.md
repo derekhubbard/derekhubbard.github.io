@@ -9,11 +9,11 @@ published: true
 
 The Elixir language ships with a super-powerful build tool named Mix, which can be used to create new projects, compile projects, run tests, and handle just about anything you can throw at it.
 
-In this post, we'll take a look at the foundational aspects of Mix, and how we can bend it to our will by creating our own Mix tasks. And because we're ~~lazy~~ efficient, we will also figure out how to minimize some extra keystrokes by creating shorter aliases for Mix tasks we find ourselves using often.
-
 <span class="image right">
   ![alt text](/images/posts/elixir.png "Elixir Logo")
 </span>
+
+In this post, we'll take a look at the foundational aspects of Mix, and how we can bend it to our will by creating our own Mix tasks. And because we're ~~lazy~~ efficient, we will also figure out how to minimize some extra keystrokes by creating shorter aliases for Mix tasks we find ourselves using often.
 
 ### The Mix Project
 Every Elixir project that uses Mix starts with defining a module using `Mix.Project`. This module is usually named `MyApplicationName.Mixfile` and is placed in a file named `mix.exs`:
