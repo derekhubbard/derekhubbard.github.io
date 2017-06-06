@@ -97,7 +97,6 @@
 		color: _palette(fg-bold);
 		font-family: 'Cormorant Garamond', serif;
 		font-weight: _font(weight);
-		letter-spacing: _size(letter-spacing);
 		line-height: 1em;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
 
@@ -119,7 +118,7 @@
 
 	h3 {
 		font-size: 1.95em;
-		line-height: 1.75em;
+		line-height: 1.5em;
 
 		@include breakpoint(small) {
 			font-size: 1em;
@@ -994,7 +993,6 @@
 			h3 {
 				font-size: 2.0em;
 				font-weight: normal;
-				letter-spacing: _size(letter-spacing-alt2);
 				margin-bottom: 0.25em;
 			}
 
