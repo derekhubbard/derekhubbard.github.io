@@ -97,9 +97,9 @@
 		color: _palette(fg-bold);
 		font-family: 'Cormorant Garamond', serif;
 		font-weight: _font(weight);
-		letter-spacing: _size(letter-spacing-alt2);
+		letter-spacing: _size(letter-spacing);
 		line-height: 1em;
-		margin: (_size(element-margin) * 0.25) 0 (_size(element-margin) * 0.5) 0;
+		margin: 0 0 (_size(element-margin) * 0.5) 0;
 
 		a {
 			color: inherit;
@@ -219,7 +219,6 @@
 		h2 {
 			font-size: 2.5em;
 			font-weight: normal;
-			letter-spacing: _size(letter-spacing-alt2);
 		}
 
 		p {
@@ -242,7 +241,7 @@
 		}
 
 		&.major {
-			margin: 0 0 (_size(element-margin) * 1.75) 0;
+			margin: 0 0 (_size(element-margin)) 0;
 
 			h2, h3, h4, h5, h6 {
 				border-bottom: solid 2px _palette(border);
@@ -986,8 +985,11 @@
 			//
 			// a:hover {
 			// 	color: _palette(fg-hover);
-			// 	background-color: red;
 			// }
+
+			&:first-child {
+				padding-top: 0;
+			}
 
 			h3 {
 				font-size: 2.0em;
@@ -1006,11 +1008,14 @@
 			}
 
 			.recent-posts-meta {
-				font-family: 'Cormorant Garamond', serif;
+				font-size: 0.75em;
 				margin-bottom: 1.0em;
 			}
 
 			.recent-posts-more {
+				float: right;
+				font-family: _font(family);
+				font-size: 0.75em;
 				text-align: right;
 			}
 
@@ -1031,28 +1036,12 @@
 				font-size: 1.5em;
 			}
 
-			&:nth-child(1) {
-				border-top-left-radius: 3px;
-			}
-
-			&:nth-child(2) {
-				border-top-right-radius: 3px;
-			}
-
-			&:nth-last-child(1) {
-				border-bottom-right-radius: 3px;
-			}
-
-			&:nth-last-child(2) {
-				border-bottom-left-radius: 3px;
-			}
-
 			@include breakpoint(medium) {
 				@include padding(3em, 2em);
 				text-align: center;
 
 				.recent-posts-more {
-					text-align: center;
+					float: none;
 				}
 
 				&:before {
@@ -1066,12 +1055,7 @@
 			@include breakpoint(small) {
 				@include padding(3em, 0);
 				background-color: transparent !important;
-				border-top: solid 2px _palette(border);
 				width: 100%;
-
-				&:first-child {
-					border-top: 0;
-				}
 			}
 		}
 	}
@@ -1327,14 +1311,13 @@
 
 		// Features, Recent Posts
 
-			.features, .recent-posts {
+			.features {
 				li {
 					@include breakpoint(small) {
 						border-top-color: _palette($p, border);
 					}
 				}
 			}
-
 	}
 
 	.wrapper {
@@ -1505,6 +1488,7 @@
 
 		h1 {
 			@include vendor('transition', 'opacity #{_duration(transitions)} ease');
+			font-weight: _font(weight-bold);
 			height: inherit;
 			left: 1.25em;
 			line-height: inherit;
@@ -1613,6 +1597,7 @@
 			@include vendor('transition', ('transform 0.5s ease', 'opacity 0.5s ease'));
 			display: inline-block;
 			font-size: 1.75em;
+			font-weight: _font(weight-bold);
 			letter-spacing: _size(letter-spacing-alt);
 			opacity: 1;
 			padding: 0.35em 1em;
@@ -1764,6 +1749,8 @@
 
 			.actions {
 				@include vendor('order', '2');
+				display: flex;
+				align-items: center;
 				width: 30%;
 			}
 
