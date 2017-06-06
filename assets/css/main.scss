@@ -1488,7 +1488,9 @@
 
 		h1 {
 			@include vendor('transition', 'opacity #{_duration(transitions)} ease');
-			font-weight: _font(weight-bold);
+			font-family: _font(family);
+			font-size: 0.9em;
+			font-weight: _font(weight);
 			height: inherit;
 			left: 1.25em;
 			line-height: inherit;
