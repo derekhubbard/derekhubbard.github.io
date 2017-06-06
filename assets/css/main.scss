@@ -1597,7 +1597,7 @@
 			@include vendor('transition', ('transform 0.5s ease', 'opacity 0.5s ease'));
 			display: inline-block;
 			font-size: 1.75em;
-			font-weight: _font(weight-bold);
+			font-weight: _font(weight);
 			letter-spacing: _size(letter-spacing-alt);
 			opacity: 1;
 			padding: 0.35em 1em;
@@ -1611,7 +1611,7 @@
 				background: _palette(fg-bold);
 				content: '';
 				display: block;
-				height: 2px;
+				height: 1px;
 				position: absolute;
 				width: 100%;
 			}
