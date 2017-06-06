@@ -1005,11 +1005,14 @@
 			}
 
 			.recent-posts-meta {
-				font-family: 'Cormorant Garamond', serif;
+				font-size: 0.75em;
 				margin-bottom: 1.0em;
 			}
 
 			.recent-posts-more {
+				float: right;
+				font-family: _font(family);
+				font-size: 0.75em;
 				text-align: right;
 			}
 
@@ -1051,7 +1054,7 @@
 				text-align: center;
 
 				.recent-posts-more {
-					text-align: center;
+					float: none;
 				}
 
 				&:before {
@@ -1504,6 +1507,7 @@
 
 		h1 {
 			@include vendor('transition', 'opacity #{_duration(transitions)} ease');
+			font-weight: _font(weight-bold);
 			height: inherit;
 			left: 1.25em;
 			line-height: inherit;
@@ -1612,6 +1616,7 @@
 			@include vendor('transition', ('transform 0.5s ease', 'opacity 0.5s ease'));
 			display: inline-block;
 			font-size: 1.75em;
+			font-weight: _font(weight-bold);
 			letter-spacing: _size(letter-spacing-alt);
 			opacity: 1;
 			padding: 0.35em 1em;
