@@ -97,7 +97,7 @@
 		color: _palette(fg-bold);
 		font-family: 'Cormorant Garamond', serif;
 		font-weight: _font(weight);
-		letter-spacing: _size(letter-spacing-alt2);
+		letter-spacing: _size(letter-spacing);
 		line-height: 1em;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
 
@@ -219,7 +219,6 @@
 		h2 {
 			font-size: 2.5em;
 			font-weight: normal;
-			letter-spacing: _size(letter-spacing-alt2);
 		}
 
 		p {
