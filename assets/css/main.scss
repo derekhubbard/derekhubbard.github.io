@@ -1749,6 +1749,8 @@
 
 			.actions {
 				@include vendor('order', '2');
+				display: flex;
+				align-items: center;
 				width: 30%;
 			}
 
