@@ -97,7 +97,6 @@
 		color: _palette(fg-bold);
 		font-family: 'Cormorant Garamond', serif;
 		font-weight: _font(weight);
-		letter-spacing: _size(letter-spacing);
 		line-height: 1em;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
 
@@ -119,7 +118,7 @@
 
 	h3 {
 		font-size: 1.95em;
-		line-height: 1.75em;
+		line-height: 1.5em;
 
 		@include breakpoint(small) {
 			font-size: 1em;
@@ -994,7 +993,6 @@
 			h3 {
 				font-size: 2.0em;
 				font-weight: normal;
-				letter-spacing: _size(letter-spacing-alt2);
 				margin-bottom: 0.25em;
 			}
 
@@ -1321,7 +1319,7 @@
 	}
 
 	.wrapper {
-		@include padding(6em, 0);
+		@include padding(3em, 0);
 
 		> .inner {
 			width: 60em;
@@ -1488,7 +1486,9 @@
 
 		h1 {
 			@include vendor('transition', 'opacity #{_duration(transitions)} ease');
-			font-weight: _font(weight-bold);
+			font-family: _font(family);
+			font-size: 0.9em;
+			font-weight: _font(weight);
 			height: inherit;
 			left: 1.25em;
 			line-height: inherit;
@@ -1597,7 +1597,7 @@
 			@include vendor('transition', ('transform 0.5s ease', 'opacity 0.5s ease'));
 			display: inline-block;
 			font-size: 1.75em;
-			font-weight: _font(weight-bold);
+			font-weight: _font(weight);
 			letter-spacing: _size(letter-spacing-alt);
 			opacity: 1;
 			padding: 0.35em 1em;
@@ -1611,7 +1611,7 @@
 				background: _palette(fg-bold);
 				content: '';
 				display: block;
-				height: 2px;
+				height: 1px;
 				position: absolute;
 				width: 100%;
 			}
@@ -1784,11 +1784,6 @@
 	#main {
 		> header {
 			@include padding(12em, 0);
-			// @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("../../images/banner.jpg")'));
-			background-attachment: fixed;
-			background-position: center center;
-			background-repeat: no-repeat;
-			background-size: cover;
 			text-align: center;
 
 			h2 {
@@ -1808,32 +1803,24 @@
 			}
 
 			@include breakpoint(xlarge) {
-				@include padding(10em, 0);
+				@include padding(8em, 0);
 			}
 
 			@include breakpoint(large) {
-				@include padding(8em, 3em);
+				@include padding(6em, 3em);
 			}
 
 			@include breakpoint(medium) {
-				@include padding(10em, 3em);
+				@include padding(6em, 3em);
 			}
 
 			@include breakpoint(small) {
-				@include padding(5em, 3em);
+				@include padding(4em, 3em);
 
 				h2 {
 					font-size: 1.25em;
 					margin: 0 0 (_size(element-margin) * 0.5) 0;
 				}
-			}
-		}
-	}
-
-	body.is-mobile {
-		#main {
-			> header {
-				background-attachment: scroll;
 			}
 		}
 	}
