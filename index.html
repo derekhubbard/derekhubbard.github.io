@@ -4,7 +4,7 @@ layout: default
 {% include banner.html %}
 
 <!-- One -->
-<section id="one" class="wrapper style5 special">
+<section id="one" class="wrapper style1 special">
   <div class="inner">
     <header class="major">
       <h2>Hello, I'm Derek</h2>
@@ -85,18 +85,17 @@ layout: default
 	</div>
 </section> -->
 
-<section id="three" class="wrapper style1 special">
+<section id="three" class="wrapper special">
 	<div class="inner">
 		<header class="major">
 			<h2>Recent Blog Posts</h2>
-			<!-- <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-			fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p> -->
 		</header>
 		<ul class="recent-posts">
-      {% for post in site.posts limit: 3 %}
+      {% for post in site.posts limit: 5 %}
         <li>
-          <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-          <p>{{ post.excerpt }}</p>
+          <a class="recent-posts-header" href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
+          <div class="recent-posts-meta"><time>{{ post.date | date: '%B %d, %Y'}}</time></div>
+          {{ post.excerpt }}
           <a class="recent-posts-more" href="{{ post.url }}"><h5>READ MORE<h5></a>
         </li>
       {% endfor %}
@@ -105,7 +104,7 @@ layout: default
 </section>
 
 <!-- CTA -->
-<section id="cta" class="wrapper style4">
+<section id="cta" class="wrapper style1">
   <div class="inner">
     <header>
       <h2>Want to Chat?</h2>
