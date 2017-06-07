@@ -121,7 +121,7 @@
 		line-height: 1.5em;
 
 		@include breakpoint(small) {
-			font-size: 1em;
+			font-size: 1.6em;
 			line-height: 1.65em;
 		}
 	}
@@ -1359,11 +1359,11 @@
 		}
 
 		@include breakpoint(medium) {
-			@include padding(4em, 3em);
+			@include padding(2em, 2em);
 		}
 
 		@include breakpoint(small) {
-			@include padding(3em, 2em);
+			@include padding(1.5em, 1.5em);
 		}
 	}
 
@@ -1809,7 +1809,7 @@
 				@include padding(4em, 3em);
 
 				h2 {
-					font-size: 1.25em;
+					font-size: 1.8em;
 					margin: 0 0 (_size(element-margin) * 0.5) 0;
 				}
 			}
