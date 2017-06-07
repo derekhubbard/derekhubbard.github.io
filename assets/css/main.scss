@@ -77,6 +77,7 @@
 
 		&:hover {
 			border-bottom-color: transparent;
+			color: _palette(fg-hover);
 		}
 	}
 
@@ -1500,6 +1501,10 @@
 				display: block;
 				height: inherit;
 				line-height: inherit;
+
+				&:hover {
+					color: inherit;
+				}
 
 				@include breakpoint(small) {
 					font-size: 0.8em;
