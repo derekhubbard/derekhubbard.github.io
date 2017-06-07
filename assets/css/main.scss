@@ -1691,18 +1691,9 @@
 
 		@include breakpoint(small) {
 			@include padding(7em, 3em);
-			height: auto;
 			min-height: 0;
 
-			h2 {
-				font-size: 1.25em;
-			}
-
 			br {
-				display: none;
-			}
-
-			.more {
 				display: none;
 			}
 		}
