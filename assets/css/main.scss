@@ -1701,6 +1701,14 @@
 			br {
 				display: none;
 			}
+
+			.more {
+				height: 9.5em;
+
+				&:after {
+					bottom: 5em;
+				}
+			}
 		}
 	}
 
