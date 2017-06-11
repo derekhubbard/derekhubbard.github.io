@@ -48,7 +48,6 @@ In the final expression, the value `1` is matched with the variable `y`, which f
 So far we've only played with pattern matching using simple integer values. Let's look at some examples that are a little more interesting.
 
 ### Pattern Matching Basics
-- strings
 We can extend the use of pattern matching to try to match just about anything we want, and we can be as specific or as general as we want with the match.
 
 For exmaple, Elixir includes support for "lists" (similar to arrays in a lot of other languages) and when matching lists, we can also capture references to each item in the list at the same time:
