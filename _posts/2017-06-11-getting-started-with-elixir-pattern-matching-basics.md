@@ -2,7 +2,7 @@
 
 layout: post
 title: "Getting Started With Elixir: Pattern Matching Basics"
-date: 2017-05-21
+date: 2017-06-11
 published: true
 
 ---
